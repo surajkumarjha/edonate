@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<style type="text/css">
+		
+  .flex {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-item + .flex-item {
+  margin-left: 10px;
+}
+
+.button {
+  margin-top: 300px;
+  background-color: #666600;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  cursor: pointer;
+    border-left: 6px solid red;
+  background-color: #666600;
+}
+
+body{
+	background-color:#a6a6a6;
+	background-image:url("my.jpeg");
+	
+}
+.button:hover {
+  background-color: green;
+}
+	</style>
+</head>
+<body>
+	<center>
+		<div class="flex">
+<form action="Ngo.php" method="POST" class="flex-item">
+	<button class="button">Add NGO</button>
+</form>
+<form action="donations.php" method="POST" class="flex-item">
+	<button class="button">View Donation</button>
+</form>
+<form action="transfer.php" method="POST" class="flex-item">
+	<button class="button">View Fund Transfer</button>
+</form>
+<form action="donate.php" method="POST" class="flex-item">
+	<button class="button">Transfer Fund</button>
+</form>
+<form action="viewngo.php" method="POST" class="flex-item">
+	<button class="button">View Ngo</button>
+</form>
+</div>
+</center>
+</body>
+</html>
